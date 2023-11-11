@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NightIcon } from "../assets";
+
 function Navbar() {
   return (
     <header className="navbar bg-base-100 w-full shadow-lg shadow-indigo-500/40">
@@ -8,7 +10,7 @@ function Navbar() {
           Where in the world?
         </Link>
         <button className="btn btn-outline">
-          <img src="../../public/night.svg" alt="icon-dark-light" />
+          <img src={NightIcon} alt="icon-dark-light" />
           <span>Dark</span>
         </button>
       </div>

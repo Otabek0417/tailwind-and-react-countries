@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 import { Link } from "react-router-dom";
 import AboutList from "../components/AboutList";
+import {BackIcon} from '../assets'
+
 function About() {
   const { id } = useParams();
   const url = `https://restcountries.com/v3.1/alpha/${id}`;
@@ -13,7 +15,7 @@ function About() {
       <div className="container pt-20">
         <Link to="/">
           <button className="btn btn-outline btn-primary">
-            <img src="../../public/back.svg" alt="back" />
+            <img src={BackIcon} alt="back" />
             <span className="font-normal text-sm">Back</span>
           </button>
         </Link>

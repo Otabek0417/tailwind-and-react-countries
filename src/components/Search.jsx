@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
+import { SearchIcon } from "../assets";
+
 function Search({ setUrl }) {
   const inputValue = useRef();
   const refFunc = () => {
@@ -24,7 +26,7 @@ function Search({ setUrl }) {
           />
           <img
             className="absolute bottom-0 right-[15px]"
-            src="../../public/search.svg"
+            src={SearchIcon}
             alt="serach"
           />
         </label>
