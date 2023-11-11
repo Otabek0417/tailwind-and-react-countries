@@ -7,7 +7,10 @@ function Navbar() {
         <Link className="btn btn-ghost normal-case text-xl">
           Where in the world?
         </Link>
-        <button>Click</button>
+        <button className="btn btn-outline">
+          <img src="../../public/night.svg" alt="icon-dark-light" />
+          <span>Dark</span>
+        </button>
       </div>
     </header>
   );
