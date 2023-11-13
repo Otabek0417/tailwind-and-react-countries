@@ -13,6 +13,7 @@ function Navbar() {
   }, [theme]);
 
   const handleChange = (e) => {
+    console.log(e);
     if (e.target.checked) {
       setTheme("light");
     } else {
